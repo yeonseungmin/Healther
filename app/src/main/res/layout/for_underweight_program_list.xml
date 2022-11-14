@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/program_underweight2"
+        android:layout_width="336dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="44dp"
+        android:autoText="false"
+        android:text="프로그램2"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/golden_six_underweight" />
+
+    <Button
+        android:id="@+id/program_underweight3"
+        android:layout_width="336dp"
+        android:layout_height="154dp"
+        android:autoText="false"
+        android:text="프로그램3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/program_underweight2" />
+
+    <Button
+        android:id="@+id/golden_six_underweight"
+        android:layout_width="336dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="40dp"
+        android:autoText="false"
+        android:text="골든 식스"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordinary_program_banner3" />
+
+    <TextView
+        android:id="@+id/ordinary_program_banner3"
+        android:layout_width="411dp"
+        android:layout_height="104dp"
+        android:gravity="center"
+        android:text="저체중용"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/golden_six_ordinary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

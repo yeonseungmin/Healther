@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="422dp"
+        android:layout_height="39dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="골든 식스 운동하기"
+        android:textColor="#77E87C"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="1dp"
+        android:text="Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Record"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:text="운동 시작"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/Pause"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="다음 운동"
+        android:onClick="Next"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Pause" />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="122dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:text="일시정지"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
+        app:layout_constraintStart_toEndOf="@+id/Record" />
+
+    <ScrollView
+        android:layout_width="416dp"
+        android:layout_height="562dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/neck"
+                android:layout_width="282dp"
+                android:layout_height="282dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:srcCompat="@drawable/neck" />
+            <TableRow
+                android:id="@+id/Squat_Row"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="100dp"
+                    android:layout_height="250dp"
+                    android:background="#2196F3"
+                    android:gravity="center_vertical"
+                    android:text="비하인드 넥 프레스"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="세트 간 90초 휴식" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="세트" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="중량(kg)" />
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="회수" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="1" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="입력"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="10회"
+                            android:inputType="number" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton18"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="성공" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton19"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="실패" />
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="2" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="입력"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="10회"
+                            android:inputType="number" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton20"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="성공" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton21"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="실패" />
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="3" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="입력"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="10회"
+                            android:inputType="number" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton22"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="성공" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton23"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="실패" />
+                        </RadioGroup>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="4" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber7"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="입력"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber8"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:ems="10"
+                            android:hint="많이"
+                            android:inputType="number"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButton34"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="성공" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton35"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="실패" />
+                        </RadioGroup>
+                        <ImageView/>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
